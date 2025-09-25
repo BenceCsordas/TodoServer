@@ -6,7 +6,7 @@ import mysql from "mysql2/promise"
 const app = express()
 app.use(express.json())
 app.use(cors())
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 
 let connection
 
